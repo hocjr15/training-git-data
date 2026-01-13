@@ -1,0 +1,16 @@
+#BO QUA DU LIEU NANG 
+*.csv 
+*.xlsx
+*.json
+*.parquet 
+/data/
+
+#BO QUA FILE CAU HINH MOI TRUONG VA MAT KHAU 
+.env
+config.py 
+*.key 
+
+#BO QUA FILE RAC CUA PYTHON 
+__pycache__/
+*.pyc 
+.DS_Store 
