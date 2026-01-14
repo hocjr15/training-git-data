@@ -1,0 +1,20 @@
+name: Kiem tra Code Python
+
+on: [push, pull_request]  # Chạy khi có Push hoặc PR
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Mượn máy ảo Ubuntu của GitHub để chạy
+    steps:
+    - uses: actions/checkout@v3
+    - name: Cai dat Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Cai thu vien
+      run: |
+        pip install pandas numpy flake8
+    - name: Kiem tra loi cu phap (Linting)
+      run: |
+        # flake8 sẽ soi code xem có biến nào khai báo mà không dùng, lỗi thụt lề...
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
