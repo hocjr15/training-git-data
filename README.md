@@ -9,3 +9,7 @@
 3.  Xây dựng Data Pipeline
 
 > "Hành trình vạn dặm bắt đầu từ một dòng code."
+
+## Nhật ký học tập
+- [x] Đã biết tạo Issue
+- [ ] Đang học về Branch
